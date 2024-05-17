@@ -62,7 +62,7 @@ services:
       - kafka
       - schemaregistry
     ports:
-      - 19000:9000
+      - 80:9000
     environment:
       KAFKA_BROKERCONNECT: kafka:9092
       CMD_ARGS: "--message.format=AVRO --message.keyFormat=DEFAULT --schemaregistry.connect=http://schemaregistry:8085"
